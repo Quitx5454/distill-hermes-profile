@@ -1,0 +1,8 @@
+# Model and provider defaults for the Refine profile.
+model:
+  provider: openrouter
+  # Nemotron 3 Super on OpenRouter's free tier.
+  name: nvidia/nemotron-3-super-120b-a12b:free
+
+tools:
+  default: true

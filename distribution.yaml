@@ -1,0 +1,16 @@
+name: distill-refine
+version: 1.0.0
+description: >-
+  Refine agent profile for Hermes — clean blockchain transaction data and
+  detect bots via x402 on Base
+hermes_requires: ">=0.12.0"
+author: "Distill"
+license: "MIT"
+
+env_requires:
+  - name: WALLET_PRIVATE_KEY
+    description: >-
+      Private key for the wallet that pays Refine over x402 on Base. Fund it
+      with a small amount of USDC on Base; each cleaning/detection request is
+      paid from this wallet. Never share this key.
+    required: true
